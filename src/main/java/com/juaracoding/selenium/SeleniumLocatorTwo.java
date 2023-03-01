@@ -24,7 +24,7 @@ public class SeleniumLocatorTwo {
         driver.findElement(By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[3]/span/label/span[3]")).click();
         String txtDownload = driver.findElement(By.xpath("*[@id='result']/span[2]")).getText();
         System.out.println(txtDownload);
-        js.executeScript("windows.scrollBy(0,500)");
+        js.executeScript("windows.scrollBy(0,00)");
 
         System.out.println("Delay 3 sec");
         try {

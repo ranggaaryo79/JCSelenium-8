@@ -2,6 +2,7 @@ package com.juaracoding.selenium;
 
 import org.openqa.selenium.By;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,7 +13,7 @@ public class SeleniumAlert {
         System.setProperty("webdriver.chrome.driver", "C:\\juaracoding\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
+
         String url = "https://demoqa.com/alerts";
         driver.get(url);
         System.out.println("get URL");
@@ -47,7 +48,7 @@ public class SeleniumAlert {
         System.out.println("Delay 3 sec");
 
 
-        driver.quit(); // menutup all tab
+        driver.quit(); //
         System.out.println("Quit Browser");
 
     }
